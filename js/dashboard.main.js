@@ -21,7 +21,7 @@ if (strUrl.indexOf("?") != -1) {
 function renderDropMenu() {
     // query device list for specific API key
     $.ajax({
-        url: "http://alpha.rododo.farm/ntu/device",
+        url: "https://alpha.rododo.farm/ntu/device",
         dataType: "json",
         crossDomain: true,
         type: "POST",
@@ -283,7 +283,7 @@ function update() {
 
     // query specific device for specific API key
     $.ajax({
-        url: "http://alpha.rododo.farm/ntu/device/" + devId + "/realtime",
+        url: "https://alpha.rododo.farm/ntu/device/" + devId + "/realtime",
         dataType: "json",
         crossDomain: true,
         type: "POST",
