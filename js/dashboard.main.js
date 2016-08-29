@@ -262,10 +262,12 @@ function setTempHumi(value) {
 
 function update() {
     // Realtime settings at first load
+    /*
     setPM1(0);
     setPM25(0);
     setPM10(0);
     setVoltage(0);
+    */
     setTempHumi([
         ['x', 'Temperature', 'Humidity'],
         ['2016-08-11T16:16:14.957Z', 26, 85],
@@ -328,4 +330,4 @@ setInterval(function () {
     update();
 
     console.log('Every 60 seconds to update data.');
-}, 60000);
+}, 5000);
